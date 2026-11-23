@@ -1,16 +1,26 @@
-# child_health_monitor
+# Pediatric Health Monitoring System (IoT + Mobile App)
 
-A new Flutter project.
+## 📌 Project Overview
+An integrated IoT-based healthcare system designed for continuous monitoring of children's vital signs. The system collects real-time data (Heart Rate, SpO2, Body Temperature, and Foot Pressure) using an ESP32 microcontroller and multiple sensors, and transmits it wirelessly to a cross-platform mobile application built with Flutter.
 
-## Getting Started
+## 🚀 Key Features
+*   **Real-time Monitoring:** Displays live vital signs (Heart Rate, SpO2, Temperature) and foot pressure data.
+*   **Data Visualization:** Utilizes `fl_chart` to render interactive charts for tracking health trends over time.
+*   **Early Warning System:** Analyzes foot pressure profiles to detect abnormalities and provide early medical alerts.
+*   **Report Generation:** Allows users to generate and export comprehensive health reports as PDF files using the `pdf` and `printing` packages.
+*   **State Management:** Built with `provider` for efficient and scalable state management.
+*   **Data Persistence:** Uses `shared_preferences` to save user settings and preferences locally.
+*   **Cross-Platform:** The mobile app is designed to run on Android, iOS, and Web.
 
-This project is a starting point for a Flutter application.
+## 🛠️ Tech Stack & Hardware
+*   **Mobile App:** Flutter (Dart)
+*   **Hardware/Firmware:** ESP32 Microcontroller, MAX30105 (SpO2/HR), LM35 (Temperature), MPU6050 (Motion), FSR (Foot Pressure).
+*   **Libraries Used:** `http`, `provider`, `fl_chart`, `google_fonts`, `pdf`, `printing`, `shared_preferences`.
 
-A few resources to get you started if this is your first Flutter project:
+## 📂 Repository Structure
+*   `/lib`: Contains the main Flutter application code (Screens, Models, Services, State).
+*   `/esp32_firmware`: Contains the C++ code for the ESP32 microcontroller.
+*   `/android` & `/ios` & `/web`: Platform-specific configurations.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 👩‍💻 Author
+**Rawan Said Rafka** - Information Engineering Graduate
